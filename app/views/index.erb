@@ -1,0 +1,9 @@
+<div class="container">
+  <a href="/image/new">Upload a new photo</a>
+</div>
+
+<div class="container">
+    <% @photos.each do |photo| %>
+    <img src="<%= photo.file %>" alt="photo">
+    <% end %>
+</div>
